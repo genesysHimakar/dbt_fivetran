@@ -1,0 +1,1 @@
+select DATE_CREATED,PARENT_ID from 100K_USD limit 10;
