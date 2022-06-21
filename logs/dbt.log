@@ -16,3 +16,1252 @@
 14:19:14.847861 [debug] [MainThread]: On debug: Close
 14:19:25.385328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BB83E3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BB83E3610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BB83E3FA0>]}
 14:19:26.322675 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-06-17 12:03:27.458269 | 1ba2f920-86da-4718-848f-9573525ecf02 ==============================
+12:03:27.458269 [info ] [MainThread]: Running with dbt=1.0.5
+12:03:27.460272 [debug] [MainThread]: running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=None, defer=None, event_buffer_size=None, exclude=None, fail_fast=None, full_refresh=False, log_cache_events=False, log_format=None, partial_parse=None, printer_width=None, profile=None, profiles_dir='C:\\Users\\DELL\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=['example.100kusd'], selector_name=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='run', write_json=None)
+12:03:27.461270 [debug] [MainThread]: Tracking: tracking
+12:03:27.464267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D012CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D012D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D012D60>]}
+12:03:27.514267 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+12:03:27.515269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1ba2f920-86da-4718-848f-9573525ecf02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D03F8B0>]}
+12:03:27.657267 [debug] [MainThread]: Parsing macros\adapters.sql
+12:03:27.715270 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+12:03:27.728267 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+12:03:27.764272 [debug] [MainThread]: Parsing macros\materializations\table.sql
+12:03:27.769272 [debug] [MainThread]: Parsing macros\materializations\view.sql
+12:03:27.770273 [debug] [MainThread]: Parsing macros\materializations\incremental\incremental.sql
+12:03:27.785268 [debug] [MainThread]: Parsing macros\materializations\incremental\strategies.sql
+12:03:27.790266 [debug] [MainThread]: Parsing macros\materializations\incremental\validate.sql
+12:03:27.801270 [debug] [MainThread]: Parsing macros\adapters.sql
+12:03:27.894264 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+12:03:27.914270 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+12:03:27.962275 [debug] [MainThread]: Parsing macros\materializations\table.sql
+12:03:27.969267 [debug] [MainThread]: Parsing macros\materializations\view.sql
+12:03:27.970269 [debug] [MainThread]: Parsing macros\materializations\incremental\incremental.sql
+12:03:27.983270 [debug] [MainThread]: Parsing macros\materializations\incremental\strategies.sql
+12:03:27.995267 [debug] [MainThread]: Parsing macros\materializations\incremental\validate.sql
+12:03:28.010269 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+12:03:28.040272 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+12:03:28.047271 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+12:03:28.052272 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+12:03:28.065268 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+12:03:28.075273 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+12:03:28.092268 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+12:03:28.095269 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+12:03:28.115269 [debug] [MainThread]: Parsing macros\etc\statement.sql
+12:03:28.124268 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+12:03:28.127277 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+12:03:28.128274 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+12:03:28.130269 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+12:03:28.131269 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+12:03:28.134269 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+12:03:28.137269 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+12:03:28.141267 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+12:03:28.145267 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+12:03:28.153267 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+12:03:28.160267 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+12:03:28.182274 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+12:03:28.185275 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+12:03:28.215293 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+12:03:28.261267 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+12:03:28.270269 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+12:03:28.291271 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+12:03:28.298272 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+12:03:28.305292 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+12:03:28.310293 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+12:03:28.326272 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+12:03:28.359293 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+12:03:28.377272 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+12:03:28.407267 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+12:03:28.427267 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+12:03:28.430269 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+12:03:28.481270 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+12:03:28.486268 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+12:03:28.517270 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+12:03:28.527270 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+12:03:30.322090 [debug] [MainThread]: 1699: static parser successfully parsed example\100kusd.sql
+12:03:30.360083 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+12:03:30.372083 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+12:03:30.697085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ba2f920-86da-4718-848f-9573525ecf02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D0C09D0>]}
+12:03:30.726086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ba2f920-86da-4718-848f-9573525ecf02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243949358E0>]}
+12:03:30.727095 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 218 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+12:03:30.732086 [info ] [MainThread]: 
+12:03:30.737088 [debug] [MainThread]: Acquiring new databricks connection "master"
+12:03:30.740089 [debug] [ThreadPool]: Acquiring new databricks connection "list_schemas"
+12:03:30.741089 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+12:03:30.742087 [debug] [ThreadPool]: On list_schemas: GetSchemas(database=None, schema=None)
+12:03:30.743088 [debug] [ThreadPool]: Opening a new connection, currently in state init
+12:08:57.856318 [debug] [ThreadPool]: SQL status: OK in 327.11 seconds
+12:08:57.920311 [debug] [ThreadPool]: On list_schemas: Close
+12:09:07.263695 [debug] [ThreadPool]: Acquiring new databricks connection "create__dbt"
+12:09:07.266704 [debug] [ThreadPool]: Acquiring new databricks connection "create__dbt"
+12:09:07.267710 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database=None, schema='dbt', identifier=None)"
+12:09:07.339688 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+12:09:07.339688 [debug] [ThreadPool]: Using databricks connection "create__dbt"
+12:09:07.340689 [debug] [ThreadPool]: On create__dbt: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "connection_name": "create__dbt"} */
+create schema if not exists dbt
+  
+12:09:07.340689 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+12:09:12.261229 [debug] [ThreadPool]: SQL status: OK in 4.92 seconds
+12:09:12.266233 [debug] [ThreadPool]: Spark adapter: NotImplemented: commit
+12:09:12.268233 [debug] [ThreadPool]: On create__dbt: ROLLBACK
+12:09:12.269232 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+12:09:12.270232 [debug] [ThreadPool]: On create__dbt: Close
+12:09:13.399151 [debug] [ThreadPool]: Acquiring new databricks connection "list_None_dbt"
+12:09:13.431149 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+12:09:13.432142 [debug] [ThreadPool]: Using databricks connection "list_None_dbt"
+12:09:13.433147 [debug] [ThreadPool]: On list_None_dbt: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "connection_name": "list_None_dbt"} */
+show table extended in dbt like '*'
+  
+12:09:13.434166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+12:09:16.267833 [debug] [ThreadPool]: SQL status: OK in 2.83 seconds
+12:09:16.284830 [debug] [ThreadPool]: On list_None_dbt: ROLLBACK
+12:09:16.285832 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+12:09:16.286831 [debug] [ThreadPool]: On list_None_dbt: Close
+12:09:17.318729 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+12:09:17.318729 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+12:09:17.319729 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+12:09:17.320728 [info ] [MainThread]: 
+12:09:17.376730 [debug] [Thread-1  ]: Began running node model.dbt_fivetran_1.100kusd
+12:09:17.376730 [info ] [Thread-1  ]: 1 of 1 START view model dbt.100kusd............................................. [RUN]
+12:09:17.378727 [debug] [Thread-1  ]: Acquiring new databricks connection "model.dbt_fivetran_1.100kusd"
+12:09:17.378727 [debug] [Thread-1  ]: Began compiling node model.dbt_fivetran_1.100kusd
+12:09:17.378727 [debug] [Thread-1  ]: Compiling model.dbt_fivetran_1.100kusd
+12:09:17.382726 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fivetran_1.100kusd"
+12:09:17.387730 [debug] [Thread-1  ]: finished collecting timing info
+12:09:17.387730 [debug] [Thread-1  ]: Began executing node model.dbt_fivetran_1.100kusd
+12:09:17.427729 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_fivetran_1.100kusd"
+12:09:17.430726 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+12:09:17.431727 [debug] [Thread-1  ]: Using databricks connection "model.dbt_fivetran_1.100kusd"
+12:09:17.431727 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select DATE_CREATED,PARENT_ID from 100K_USD limit 10;
+
+12:09:17.431727 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+12:09:20.034944 [debug] [Thread-1  ]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select DATE_CREATED,PARENT_ID from 100K_USD limit 10;
+
+12:09:20.036960 [debug] [Thread-1  ]: Databricks adapter: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['DATE_CREATED, 'PARENT_ID]
+      +- 'UnresolvedRelation [100K_USD], [], false
+
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['DATE_CREATED, 'PARENT_ID]
+      +- 'UnresolvedRelation [100K_USD], [], false
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+	... 16 more
+
+12:09:20.038923 [debug] [Thread-1  ]: finished collecting timing info
+12:09:20.039922 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: ROLLBACK
+12:09:20.040923 [debug] [Thread-1  ]: Databricks adapter: NotImplemented: rollback
+12:09:20.040923 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: Close
+12:09:21.065923 [debug] [Thread-1  ]: Runtime Error in model 100kusd (models\example\100kusd.sql)
+  org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['DATE_CREATED, 'PARENT_ID]
+        +- 'UnresolvedRelation [100K_USD], [], false
+  
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+  	at java.security.AccessController.doPrivileged(Native Method)
+  	at javax.security.auth.Subject.doAs(Subject.java:422)
+  	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+  	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  	at java.lang.Thread.run(Thread.java:748)
+  Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['DATE_CREATED, 'PARENT_ID]
+        +- 'UnresolvedRelation [100K_USD], [], false
+  
+  	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+  	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+  	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+  	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+  	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+  	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+  	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+  	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+  	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+  	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+  	... 16 more
+  
+12:09:21.066925 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba2f920-86da-4718-848f-9573525ecf02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D3492E0>]}
+12:09:21.066925 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt.100kusd.................................... [[31mERROR[0m in 3.69s]
+12:09:21.068920 [debug] [Thread-1  ]: Finished running node model.dbt_fivetran_1.100kusd
+12:09:21.072923 [debug] [MainThread]: Acquiring new databricks connection "master"
+12:09:21.073923 [debug] [MainThread]: On master: ROLLBACK
+12:09:21.074919 [debug] [MainThread]: Opening a new connection, currently in state init
+12:09:22.133380 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+12:09:22.134403 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+12:09:22.135394 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+12:09:22.136396 [debug] [MainThread]: On master: ROLLBACK
+12:09:22.137394 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+12:09:22.138394 [debug] [MainThread]: On master: Close
+12:09:23.217092 [info ] [MainThread]: 
+12:09:23.220096 [info ] [MainThread]: Finished running 1 view model in 352.48s.
+12:09:23.221099 [debug] [MainThread]: Connection 'master' was properly closed.
+12:09:23.222098 [debug] [MainThread]: Connection 'create__dbt' was properly closed.
+12:09:23.222098 [debug] [MainThread]: Connection 'list_None_dbt' was properly closed.
+12:09:23.223092 [debug] [MainThread]: Connection 'model.dbt_fivetran_1.100kusd' was properly closed.
+12:09:23.259095 [info ] [MainThread]: 
+12:09:23.263122 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+12:09:23.278124 [info ] [MainThread]: 
+12:09:23.280096 [error] [MainThread]: [33mRuntime Error in model 100kusd (models\example\100kusd.sql)[0m
+12:09:23.286094 [error] [MainThread]:   org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+12:09:23.292095 [error] [MainThread]:   'GlobalLimit 10
+12:09:23.294094 [error] [MainThread]:   +- 'LocalLimit 10
+12:09:23.301092 [error] [MainThread]:      +- 'Project ['DATE_CREATED, 'PARENT_ID]
+12:09:23.306093 [error] [MainThread]:         +- 'UnresolvedRelation [100K_USD], [], false
+12:09:23.314101 [error] [MainThread]:   
+12:09:23.316090 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+12:09:23.320094 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+12:09:23.323094 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+12:09:23.324093 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+12:09:23.329099 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+12:09:23.333093 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+12:09:23.336096 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+12:09:23.339093 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+12:09:23.341093 [error] [MainThread]:   	at java.security.AccessController.doPrivileged(Native Method)
+12:09:23.342092 [error] [MainThread]:   	at javax.security.auth.Subject.doAs(Subject.java:422)
+12:09:23.344092 [error] [MainThread]:   	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+12:09:23.362096 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+12:09:23.364094 [error] [MainThread]:   	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+12:09:23.366095 [error] [MainThread]:   	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12:09:23.369094 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+12:09:23.370092 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+12:09:23.373094 [error] [MainThread]:   	at java.lang.Thread.run(Thread.java:748)
+12:09:23.376096 [error] [MainThread]:   Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100K_USD; line 6 pos 39;
+12:09:23.384095 [error] [MainThread]:   'GlobalLimit 10
+12:09:23.387110 [error] [MainThread]:   +- 'LocalLimit 10
+12:09:23.397092 [error] [MainThread]:      +- 'Project ['DATE_CREATED, 'PARENT_ID]
+12:09:23.398098 [error] [MainThread]:         +- 'UnresolvedRelation [100K_USD], [], false
+12:09:23.401102 [error] [MainThread]:   
+12:09:23.402096 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+12:09:23.403096 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+12:09:23.405100 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+12:09:23.409116 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+12:09:23.412096 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+12:09:23.417094 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+12:09:23.418094 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+12:09:23.420091 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+12:09:23.421092 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+12:09:23.423093 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+12:09:23.424095 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+12:09:23.426091 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+12:09:23.427092 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+12:09:23.430095 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+12:09:23.431095 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+12:09:23.433092 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+12:09:23.434091 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+12:09:23.435092 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+12:09:23.437096 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+12:09:23.439092 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+12:09:23.440095 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+12:09:23.444095 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+12:09:23.447095 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+12:09:23.451092 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+12:09:23.455095 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+12:09:23.464093 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+12:09:23.476098 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+12:09:23.482093 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+12:09:23.486098 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+12:09:23.489093 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+12:09:23.492092 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+12:09:23.494093 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+12:09:23.496095 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+12:09:23.497101 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+12:09:23.501095 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+12:09:23.503096 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+12:09:23.505094 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+12:09:23.506097 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+12:09:23.510094 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+12:09:23.512097 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+12:09:23.515093 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+12:09:23.516097 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+12:09:23.517094 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+12:09:23.520092 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+12:09:23.525096 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+12:09:23.527094 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+12:09:23.531102 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+12:09:23.533090 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+12:09:23.535093 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+12:09:23.537091 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+12:09:23.539094 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+12:09:23.542095 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+12:09:23.544102 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+12:09:23.546093 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+12:09:23.547096 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+12:09:23.548092 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+12:09:23.550093 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+12:09:23.552094 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+12:09:23.558110 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+12:09:23.560094 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+12:09:23.563093 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+12:09:23.565092 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+12:09:23.566094 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+12:09:23.567093 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+12:09:23.569092 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+12:09:23.571091 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+12:09:23.572093 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+12:09:23.577110 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+12:09:23.583094 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+12:09:23.586094 [error] [MainThread]:   	... 16 more
+12:09:23.587096 [error] [MainThread]:   
+12:09:23.588094 [info ] [MainThread]: 
+12:09:23.591091 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+12:09:23.593092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439D0C0D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439CFCBDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002439CFBEF10>]}
+
+
+============================== 2022-06-17 15:56:20.727808 | 7aeb2fb9-5bd6-42a3-9e17-c2ee0dfe2c78 ==============================
+15:56:20.727808 [info ] [MainThread]: Running with dbt=1.0.5
+15:56:20.729133 [debug] [MainThread]: running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=None, defer=None, event_buffer_size=None, exclude=None, fail_fast=None, full_refresh=False, log_cache_events=False, log_format=None, partial_parse=None, printer_width=None, profile=None, profiles_dir='C:\\Users\\DELL\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=['example.100kusd'], selector_name=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='run', write_json=None)
+15:56:20.730151 [debug] [MainThread]: Tracking: tracking
+15:56:20.732251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48A13CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48A13D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48A13D60>]}
+15:56:20.888095 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+15:56:20.888095 [debug] [MainThread]: Partial parsing: updated file: dbt_fivetran_1://models\example\100kusd.sql
+15:56:20.905116 [debug] [MainThread]: 1699: static parser successfully parsed example\100kusd.sql
+15:56:20.936590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7aeb2fb9-5bd6-42a3-9e17-c2ee0dfe2c78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48ADA6D0>]}
+15:56:20.948574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7aeb2fb9-5bd6-42a3-9e17-c2ee0dfe2c78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48A59CD0>]}
+15:56:20.948574 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 218 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+15:56:20.951575 [info ] [MainThread]: 
+15:56:20.952591 [debug] [MainThread]: Acquiring new databricks connection "master"
+15:56:20.955567 [debug] [ThreadPool]: Acquiring new databricks connection "list_schemas"
+15:56:20.955567 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+15:56:20.956567 [debug] [ThreadPool]: On list_schemas: GetSchemas(database=None, schema=None)
+15:56:20.956567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+15:56:25.667540 [debug] [ThreadPool]: SQL status: OK in 4.71 seconds
+15:56:25.709883 [debug] [ThreadPool]: On list_schemas: Close
+15:56:35.041472 [debug] [ThreadPool]: Acquiring new databricks connection "list_None_dbt"
+15:56:35.084468 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+15:56:35.085470 [debug] [ThreadPool]: Using databricks connection "list_None_dbt"
+15:56:35.085470 [debug] [ThreadPool]: On list_None_dbt: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "connection_name": "list_None_dbt"} */
+show table extended in dbt like '*'
+  
+15:56:35.086478 [debug] [ThreadPool]: Opening a new connection, currently in state init
+15:56:39.574700 [debug] [ThreadPool]: SQL status: OK in 4.49 seconds
+15:56:39.587131 [debug] [ThreadPool]: On list_None_dbt: ROLLBACK
+15:56:39.588135 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+15:56:39.589539 [debug] [ThreadPool]: On list_None_dbt: Close
+15:56:40.707325 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+15:56:40.708748 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+15:56:40.709787 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+15:56:40.712324 [info ] [MainThread]: 
+15:56:40.743372 [debug] [Thread-1  ]: Began running node model.dbt_fivetran_1.100kusd
+15:56:40.745372 [info ] [Thread-1  ]: 1 of 1 START view model dbt.100kusd............................................. [RUN]
+15:56:40.749362 [debug] [Thread-1  ]: Acquiring new databricks connection "model.dbt_fivetran_1.100kusd"
+15:56:40.749362 [debug] [Thread-1  ]: Began compiling node model.dbt_fivetran_1.100kusd
+15:56:40.750363 [debug] [Thread-1  ]: Compiling model.dbt_fivetran_1.100kusd
+15:56:40.754359 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fivetran_1.100kusd"
+15:56:40.755366 [debug] [Thread-1  ]: finished collecting timing info
+15:56:40.756358 [debug] [Thread-1  ]: Began executing node model.dbt_fivetran_1.100kusd
+15:56:40.811358 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_fivetran_1.100kusd"
+15:56:40.813360 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+15:56:40.813360 [debug] [Thread-1  ]: Using databricks connection "model.dbt_fivetran_1.100kusd"
+15:56:40.814363 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select date_created,parent_id from 100k_usd limit 10;
+
+15:56:40.814363 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+15:56:43.503847 [debug] [Thread-1  ]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select date_created,parent_id from 100k_usd limit 10;
+
+15:56:43.504847 [debug] [Thread-1  ]: Databricks adapter: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['date_created, 'parent_id]
+      +- 'UnresolvedRelation [100k_usd], [], false
+
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['date_created, 'parent_id]
+      +- 'UnresolvedRelation [100k_usd], [], false
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+	... 16 more
+
+15:56:43.505846 [debug] [Thread-1  ]: finished collecting timing info
+15:56:43.506846 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: ROLLBACK
+15:56:43.507846 [debug] [Thread-1  ]: Databricks adapter: NotImplemented: rollback
+15:56:43.507846 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: Close
+15:56:44.564755 [debug] [Thread-1  ]: Runtime Error in model 100kusd (models\example\100kusd.sql)
+  org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['date_created, 'parent_id]
+        +- 'UnresolvedRelation [100k_usd], [], false
+  
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+  	at java.security.AccessController.doPrivileged(Native Method)
+  	at javax.security.auth.Subject.doAs(Subject.java:422)
+  	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+  	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  	at java.lang.Thread.run(Thread.java:748)
+  Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['date_created, 'parent_id]
+        +- 'UnresolvedRelation [100k_usd], [], false
+  
+  	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+  	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+  	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+  	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+  	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+  	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+  	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+  	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+  	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+  	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+  	... 16 more
+  
+15:56:44.565755 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7aeb2fb9-5bd6-42a3-9e17-c2ee0dfe2c78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48C06DF0>]}
+15:56:44.567798 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt.100kusd.................................... [[31mERROR[0m in 3.82s]
+15:56:44.572171 [debug] [Thread-1  ]: Finished running node model.dbt_fivetran_1.100kusd
+15:56:44.578213 [debug] [MainThread]: Acquiring new databricks connection "master"
+15:56:44.580211 [debug] [MainThread]: On master: ROLLBACK
+15:56:44.581211 [debug] [MainThread]: Opening a new connection, currently in state init
+15:56:45.699164 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+15:56:45.700164 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+15:56:45.701165 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+15:56:45.702164 [debug] [MainThread]: On master: ROLLBACK
+15:56:45.702164 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+15:56:45.703164 [debug] [MainThread]: On master: Close
+15:56:46.792153 [info ] [MainThread]: 
+15:56:46.794537 [info ] [MainThread]: Finished running 1 view model in 25.84s.
+15:56:46.796563 [debug] [MainThread]: Connection 'master' was properly closed.
+15:56:46.797572 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+15:56:46.797572 [debug] [MainThread]: Connection 'list_None_dbt' was properly closed.
+15:56:46.798567 [debug] [MainThread]: Connection 'model.dbt_fivetran_1.100kusd' was properly closed.
+15:56:46.814729 [info ] [MainThread]: 
+15:56:46.815728 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+15:56:46.817730 [info ] [MainThread]: 
+15:56:46.818735 [error] [MainThread]: [33mRuntime Error in model 100kusd (models\example\100kusd.sql)[0m
+15:56:46.819728 [error] [MainThread]:   org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+15:56:46.820729 [error] [MainThread]:   'GlobalLimit 10
+15:56:46.821730 [error] [MainThread]:   +- 'LocalLimit 10
+15:56:46.822732 [error] [MainThread]:      +- 'Project ['date_created, 'parent_id]
+15:56:46.824729 [error] [MainThread]:         +- 'UnresolvedRelation [100k_usd], [], false
+15:56:46.825730 [error] [MainThread]:   
+15:56:46.826729 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+15:56:46.827729 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+15:56:46.829729 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+15:56:46.830733 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+15:56:46.832730 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+15:56:46.834732 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+15:56:46.836736 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+15:56:46.838743 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+15:56:46.840729 [error] [MainThread]:   	at java.security.AccessController.doPrivileged(Native Method)
+15:56:46.841730 [error] [MainThread]:   	at javax.security.auth.Subject.doAs(Subject.java:422)
+15:56:46.843732 [error] [MainThread]:   	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+15:56:46.844732 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+15:56:46.846734 [error] [MainThread]:   	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+15:56:46.847731 [error] [MainThread]:   	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:56:46.848731 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:56:46.850730 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:56:46.853740 [error] [MainThread]:   	at java.lang.Thread.run(Thread.java:748)
+15:56:46.854733 [error] [MainThread]:   Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+15:56:46.856734 [error] [MainThread]:   'GlobalLimit 10
+15:56:46.857731 [error] [MainThread]:   +- 'LocalLimit 10
+15:56:46.859731 [error] [MainThread]:      +- 'Project ['date_created, 'parent_id]
+15:56:46.860730 [error] [MainThread]:         +- 'UnresolvedRelation [100k_usd], [], false
+15:56:46.861729 [error] [MainThread]:   
+15:56:46.863746 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+15:56:46.864730 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+15:56:46.867734 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+15:56:46.869737 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+15:56:46.871730 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+15:56:46.872729 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+15:56:46.875733 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+15:56:46.876732 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+15:56:46.877730 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+15:56:46.879735 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+15:56:46.881728 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+15:56:46.882729 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+15:56:46.883731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+15:56:46.884737 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+15:56:46.885731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+15:56:46.886730 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+15:56:46.888732 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+15:56:46.889732 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+15:56:46.890733 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+15:56:46.891731 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+15:56:46.894730 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+15:56:46.896731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+15:56:46.897728 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+15:56:46.898728 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+15:56:46.899732 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+15:56:46.900729 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+15:56:46.905736 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+15:56:46.907734 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+15:56:46.908732 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+15:56:46.909731 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+15:56:46.910731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+15:56:46.912731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+15:56:46.914729 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+15:56:46.916729 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+15:56:46.917732 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+15:56:46.919729 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+15:56:46.920732 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+15:56:46.922730 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+15:56:46.923732 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+15:56:46.924730 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+15:56:46.928733 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+15:56:46.932746 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+15:56:46.934731 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+15:56:46.937731 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+15:56:46.939729 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+15:56:46.940732 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+15:56:46.941731 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+15:56:46.943732 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+15:56:46.944729 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+15:56:46.945730 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+15:56:46.947729 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+15:56:46.948729 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+15:56:46.950728 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+15:56:46.951730 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+15:56:46.952729 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+15:56:46.953730 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+15:56:46.956731 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+15:56:46.957730 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+15:56:46.959731 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+15:56:46.962741 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+15:56:46.963731 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+15:56:46.965730 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+15:56:46.966730 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+15:56:46.968735 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+15:56:46.970728 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+15:56:46.972728 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+15:56:46.973731 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+15:56:46.976734 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+15:56:46.977731 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+15:56:46.981740 [error] [MainThread]:   	... 16 more
+15:56:46.982730 [error] [MainThread]:   
+15:56:46.984727 [info ] [MainThread]: 
+15:56:46.985729 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+15:56:46.986730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D489B2FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48C14940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D48C14070>]}
+
+
+============================== 2022-06-17 16:04:55.783386 | cc4c44e3-73ea-44e4-8b9c-828587639aaf ==============================
+16:04:55.783386 [info ] [MainThread]: Running with dbt=1.0.5
+16:04:55.784387 [debug] [MainThread]: running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=None, defer=None, event_buffer_size=None, exclude=None, fail_fast=None, full_refresh=False, log_cache_events=False, log_format=None, partial_parse=None, printer_width=None, profile=None, profiles_dir='C:\\Users\\DELL\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=['example.100kusd'], selector_name=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='run', write_json=None)
+16:04:55.785369 [debug] [MainThread]: Tracking: tracking
+16:04:55.786389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F3A2CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F3A2D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F3A2D60>]}
+16:04:55.901505 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+16:04:55.902506 [debug] [MainThread]: Partial parsing: update schema file: dbt_fivetran_1://models\example\schema.yml
+16:04:55.959659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc4c44e3-73ea-44e4-8b9c-828587639aaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F4B4FA0>]}
+16:04:55.968679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc4c44e3-73ea-44e4-8b9c-828587639aaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F413D00>]}
+16:04:55.969684 [info ] [MainThread]: Found 3 models, 6 tests, 0 snapshots, 0 analyses, 218 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:04:55.971686 [info ] [MainThread]: 
+16:04:55.972680 [debug] [MainThread]: Acquiring new databricks connection "master"
+16:04:55.974660 [debug] [ThreadPool]: Acquiring new databricks connection "list_schemas"
+16:04:55.975665 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+16:04:55.975665 [debug] [ThreadPool]: On list_schemas: GetSchemas(database=None, schema=None)
+16:04:55.976663 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:04:58.327045 [debug] [ThreadPool]: SQL status: OK in 2.35 seconds
+16:04:58.335780 [debug] [ThreadPool]: On list_schemas: Close
+16:04:59.376769 [debug] [ThreadPool]: Acquiring new databricks connection "list_None_dbt"
+16:04:59.417650 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+16:04:59.417992 [debug] [ThreadPool]: Using databricks connection "list_None_dbt"
+16:04:59.419036 [debug] [ThreadPool]: On list_None_dbt: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "connection_name": "list_None_dbt"} */
+show table extended in dbt like '*'
+  
+16:04:59.420036 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:05:02.146367 [debug] [ThreadPool]: SQL status: OK in 2.73 seconds
+16:05:02.152369 [debug] [ThreadPool]: On list_None_dbt: ROLLBACK
+16:05:02.153368 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+16:05:02.153368 [debug] [ThreadPool]: On list_None_dbt: Close
+16:05:03.261495 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+16:05:03.262491 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+16:05:03.265489 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+16:05:03.266488 [info ] [MainThread]: 
+16:05:03.284484 [debug] [Thread-1  ]: Began running node model.dbt_fivetran_1.100kusd
+16:05:03.285485 [info ] [Thread-1  ]: 1 of 1 START view model dbt.100kusd............................................. [RUN]
+16:05:03.287483 [debug] [Thread-1  ]: Acquiring new databricks connection "model.dbt_fivetran_1.100kusd"
+16:05:03.287483 [debug] [Thread-1  ]: Began compiling node model.dbt_fivetran_1.100kusd
+16:05:03.288493 [debug] [Thread-1  ]: Compiling model.dbt_fivetran_1.100kusd
+16:05:03.295493 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fivetran_1.100kusd"
+16:05:03.299488 [debug] [Thread-1  ]: finished collecting timing info
+16:05:03.300484 [debug] [Thread-1  ]: Began executing node model.dbt_fivetran_1.100kusd
+16:05:03.362482 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_fivetran_1.100kusd"
+16:05:03.363480 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+16:05:03.363480 [debug] [Thread-1  ]: Using databricks connection "model.dbt_fivetran_1.100kusd"
+16:05:03.364481 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: /* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select date_created,parent_id from 100k_usd limit 10;
+
+16:05:03.364481 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+16:05:05.738212 [debug] [Thread-1  ]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.0.5", "profile_name": "dbt_fivetran_1", "target_name": "dev", "node_id": "model.dbt_fivetran_1.100kusd"} */
+create or replace view dbt.100kusd
+  
+  
+  as
+    select date_created,parent_id from 100k_usd limit 10;
+
+16:05:05.739255 [debug] [Thread-1  ]: Databricks adapter: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['date_created, 'parent_id]
+      +- 'UnresolvedRelation [100k_usd], [], false
+
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+'GlobalLimit 10
++- 'LocalLimit 10
+   +- 'Project ['date_created, 'parent_id]
+      +- 'UnresolvedRelation [100k_usd], [], false
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+	... 16 more
+
+16:05:05.741255 [debug] [Thread-1  ]: finished collecting timing info
+16:05:05.742205 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: ROLLBACK
+16:05:05.742205 [debug] [Thread-1  ]: Databricks adapter: NotImplemented: rollback
+16:05:05.743255 [debug] [Thread-1  ]: On model.dbt_fivetran_1.100kusd: Close
+16:05:06.848367 [debug] [Thread-1  ]: Runtime Error in model 100kusd (models\example\100kusd.sql)
+  org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['date_created, 'parent_id]
+        +- 'UnresolvedRelation [100k_usd], [], false
+  
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+  	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+  	at java.security.AccessController.doPrivileged(Native Method)
+  	at javax.security.auth.Subject.doAs(Subject.java:422)
+  	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+  	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  	at java.lang.Thread.run(Thread.java:748)
+  Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+  'GlobalLimit 10
+  +- 'LocalLimit 10
+     +- 'Project ['date_created, 'parent_id]
+        +- 'UnresolvedRelation [100k_usd], [], false
+  
+  	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+  	at scala.collection.Iterator.foreach(Iterator.scala:941)
+  	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+  	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+  	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+  	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+  	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+  	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+  	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+  	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+  	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+  	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+  	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+  	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+  	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+  	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+  	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+  	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+  	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+  	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+  	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+  	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+  	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+  	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+  	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+  	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+  	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+  	... 16 more
+  
+16:05:06.850381 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc4c44e3-73ea-44e4-8b9c-828587639aaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F5B0B50>]}
+16:05:06.851379 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt.100kusd.................................... [[31mERROR[0m in 3.56s]
+16:05:06.855382 [debug] [Thread-1  ]: Finished running node model.dbt_fivetran_1.100kusd
+16:05:06.861362 [debug] [MainThread]: Acquiring new databricks connection "master"
+16:05:06.862360 [debug] [MainThread]: On master: ROLLBACK
+16:05:06.863364 [debug] [MainThread]: Opening a new connection, currently in state init
+16:05:07.943057 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+16:05:07.944055 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+16:05:07.945083 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+16:05:07.945083 [debug] [MainThread]: On master: ROLLBACK
+16:05:07.946084 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+16:05:07.947083 [debug] [MainThread]: On master: Close
+16:05:09.032816 [info ] [MainThread]: 
+16:05:09.035819 [info ] [MainThread]: Finished running 1 view model in 13.06s.
+16:05:09.038837 [debug] [MainThread]: Connection 'master' was properly closed.
+16:05:09.040824 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+16:05:09.041825 [debug] [MainThread]: Connection 'list_None_dbt' was properly closed.
+16:05:09.042819 [debug] [MainThread]: Connection 'model.dbt_fivetran_1.100kusd' was properly closed.
+16:05:09.070672 [info ] [MainThread]: 
+16:05:09.071668 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+16:05:09.073669 [info ] [MainThread]: 
+16:05:09.077685 [error] [MainThread]: [33mRuntime Error in model 100kusd (models\example\100kusd.sql)[0m
+16:05:09.080686 [error] [MainThread]:   org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+16:05:09.082674 [error] [MainThread]:   'GlobalLimit 10
+16:05:09.083671 [error] [MainThread]:   +- 'LocalLimit 10
+16:05:09.085675 [error] [MainThread]:      +- 'Project ['date_created, 'parent_id]
+16:05:09.086670 [error] [MainThread]:         +- 'UnresolvedRelation [100k_usd], [], false
+16:05:09.087671 [error] [MainThread]:   
+16:05:09.089673 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:1019)
+16:05:09.094671 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:759)
+16:05:09.096670 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+16:05:09.098671 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)
+16:05:09.099673 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)
+16:05:09.101670 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:56)
+16:05:09.103670 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:737)
+16:05:09.104671 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:722)
+16:05:09.107671 [error] [MainThread]:   	at java.security.AccessController.doPrivileged(Native Method)
+16:05:09.109676 [error] [MainThread]:   	at javax.security.auth.Subject.doAs(Subject.java:422)
+16:05:09.110671 [error] [MainThread]:   	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+16:05:09.111670 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:771)
+16:05:09.113669 [error] [MainThread]:   	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+16:05:09.114671 [error] [MainThread]:   	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:05:09.119675 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:05:09.121679 [error] [MainThread]:   	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:05:09.123670 [error] [MainThread]:   	at java.lang.Thread.run(Thread.java:748)
+16:05:09.125705 [error] [MainThread]:   Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: 100k_usd; line 6 pos 39;
+16:05:09.127675 [error] [MainThread]:   'GlobalLimit 10
+16:05:09.129672 [error] [MainThread]:   +- 'LocalLimit 10
+16:05:09.130672 [error] [MainThread]:      +- 'Project ['date_created, 'parent_id]
+16:05:09.131672 [error] [MainThread]:         +- 'UnresolvedRelation [100k_usd], [], false
+16:05:09.132672 [error] [MainThread]:   
+16:05:09.134672 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+16:05:09.137678 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2(CheckAnalysis.scala:123)
+16:05:09.138670 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$2$adapted(CheckAnalysis.scala:99)
+16:05:09.140672 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:262)
+16:05:09.142672 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+16:05:09.143670 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+16:05:09.144671 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+16:05:09.145672 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+16:05:09.146671 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+16:05:09.148670 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+16:05:09.149671 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+16:05:09.150675 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+16:05:09.151671 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+16:05:09.152672 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+16:05:09.154670 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+16:05:09.155668 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+16:05:09.156670 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+16:05:09.158674 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+16:05:09.160673 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+16:05:09.161674 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+16:05:09.162669 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+16:05:09.163668 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+16:05:09.164668 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:261)
+16:05:09.166671 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:261)
+16:05:09.170671 [error] [MainThread]:   	at scala.collection.Iterator.foreach(Iterator.scala:941)
+16:05:09.172678 [error] [MainThread]:   	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+16:05:09.174673 [error] [MainThread]:   	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+16:05:09.175670 [error] [MainThread]:   	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+16:05:09.176673 [error] [MainThread]:   	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+16:05:09.177670 [error] [MainThread]:   	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+16:05:09.178673 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:261)
+16:05:09.179671 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:99)
+16:05:09.180671 [error] [MainThread]:   	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+16:05:09.181671 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+16:05:09.183676 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:96)
+16:05:09.184673 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:96)
+16:05:09.185674 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:191)
+16:05:09.186670 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:248)
+16:05:09.187669 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:347)
+16:05:09.189672 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:245)
+16:05:09.191671 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:96)
+16:05:09.193673 [error] [MainThread]:   	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+16:05:09.196673 [error] [MainThread]:   	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:134)
+16:05:09.199677 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:180)
+16:05:09.200670 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+16:05:09.201670 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:180)
+16:05:09.203672 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:97)
+16:05:09.204670 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:94)
+16:05:09.205674 [error] [MainThread]:   	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:86)
+16:05:09.206671 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.CreateViewCommand.run(views.scala:156)
+16:05:09.208693 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+16:05:09.210671 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+16:05:09.212675 [error] [MainThread]:   	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+16:05:09.214671 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:235)
+16:05:09.216668 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3825)
+16:05:09.217670 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:130)
+16:05:09.218674 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:273)
+16:05:09.219672 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)
+16:05:09.220669 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+16:05:09.221671 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)
+16:05:09.222671 [error] [MainThread]:   	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:223)
+16:05:09.224670 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3823)
+16:05:09.225676 [error] [MainThread]:   	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:235)
+16:05:09.226669 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:860)
+16:05:09.227671 [error] [MainThread]:   	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:854)
+16:05:09.229667 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:842)
+16:05:09.230668 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:831)
+16:05:09.232668 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:842)
+16:05:09.233670 [error] [MainThread]:   	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:896)
+16:05:09.234671 [error] [MainThread]:   	... 16 more
+16:05:09.235669 [error] [MainThread]:   
+16:05:09.236670 [info ] [MainThread]: 
+16:05:09.237668 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+16:05:09.238668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F3CFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F3CF9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19F598700>]}
