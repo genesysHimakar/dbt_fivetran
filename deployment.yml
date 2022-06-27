@@ -5,3 +5,4 @@ jobs:
    steps:
      - name: run models
        command: dbt run --models example.100kusd
+       command: dbt run --models example.4599_system_note
