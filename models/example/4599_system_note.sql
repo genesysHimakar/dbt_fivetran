@@ -1,1 +1,9 @@
-select action,audit_file from netsuite_suiteanalytics.4599_system_note limit 10;
+ select 
+ 
+ action as action,
+ audit_file as audit_file
+ FROM 
+    {{ source(
+        'netsuite_suiteanalytics',
+        '4599_system_note'
+    ) }}
