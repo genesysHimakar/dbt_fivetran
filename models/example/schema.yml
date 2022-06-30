@@ -28,3 +28,10 @@ models:
         tests:
           - unique
           - not_null
+sources:
+  - name: netsuite_suiteanalytics
+    tables:
+      - name: approval_level
+  - name: netsuite_suiteanalytics
+    tables:
+      - name: 4599_system_note
